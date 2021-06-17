@@ -3,19 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
         <!---<link rel="stylesheet" href="css/icon-font.css">--->
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book now</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <header class="header">
-            <div class="header__logo-box"> 
+            <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
 
@@ -25,10 +46,10 @@
                     <span class="heading-primary--sub">is where life happens</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
         </header>
-        
+
         <main>
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
@@ -105,12 +126,12 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most popular tours
                     </h2>
-                </div>   
+                </div>
 
                 <div class="row">
                     <div class="col-1-of-3">
@@ -136,9 +157,9 @@
                                 <div class="card__cta">
                                        <div class="card__price-box">
                                             <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$297</p>  
-                                       </div> 
-                                       <a href="#" class="btn btn--white">Book now!</a>
+                                            <p class="card__price-value">$297</p>
+                                       </div>
+                                       <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -166,9 +187,9 @@
                                 <div class="card__cta">
                                        <div class="card__price-box">
                                             <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$497</p>  
-                                       </div> 
-                                       <a href="#" class="btn btn--white">Book now!</a>
+                                            <p class="card__price-value">$497</p>
+                                       </div>
+                                       <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -196,25 +217,25 @@
                                 <div class="card__cta">
                                        <div class="card__price-box">
                                             <p class="card__price-only">Only</p>
-                                            <p class="card__price-value">$897</p>  
-                                       </div> 
-                                       <a href="#" class="btn btn--white">Book now!</a>
+                                            <p class="card__price-value">$897</p>
+                                       </div>
+                                       <a href="#popup" class="btn btn--white">Book now!</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="u-center-text u-margin-top-huge">
                     <a href="#" class="btn btn--green">Discover all tours</a>
-                </div>  
+                </div>
             </section>
 
             <section class="section-stories">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/video.mp4" type="video/mp4"> 
-                        <source src="img/video.webm" type="video/webm"> 
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
                         Your browser is not supported!
                     </video>
                 </div>
@@ -223,7 +244,7 @@
                     <h2 class="heading-secondary">
                         We make people genuinely happy
                     </h2>
-                </div>  
+                </div>
 
                 <div class="row">
                     <div class="story">
@@ -263,7 +284,7 @@
 
                 <div class="u-center-text u-margin-top-huge">
                     <a href="#" class="btn-text">Read all stories &rarr;</a>
-                </div>  
+                </div>
             </section>
 
             <section class="section-book">
@@ -274,7 +295,7 @@
                                 <h2 class="heading-secondary">
                                     Start booking now
                                 </h2>
-                            </div>   
+                            </div>
                             <form action="#" class="form">
                                 <div class="form__group">
                                     <input id="name" type="text" class="form__input" placeholder="Full Name" required>
@@ -309,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
         </main>
 
         <footer class="footer">
@@ -337,6 +358,25 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                    <p class="popup__text">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
+
         <!--
         <section class="grid-test">
             <div class="row">
@@ -348,7 +388,7 @@
                 </div>
             </div>
 
-        
+
             <div class="row">
                 <div class="col-1-of-3">
                     Col 1 of 3
